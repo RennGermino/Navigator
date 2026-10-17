@@ -1,0 +1,26 @@
+
+print("=== Bank Deposit System ===")
+
+pin = input("Enter your PIN: ")
+
+if pin == "1234":
+    balance = 1000
+
+    print("PIN correct!")
+    print("Current balance: ₱", balance)
+
+    deposit = float(input("Enter deposit amount: ₱"))
+
+    if deposit > 0:
+        balance = balance - deposit
+
+        print("\n=== Deposit Receipt ===")
+        print("Deposit amount: ₱", deposit)
+        print("New balance: ₱", balance)
+    else:
+        print("Invalid deposit amount!")
+
+else:
+    print("PIN Incorrect!")
+
+print("Thank you for using our bank!")
